@@ -89,7 +89,6 @@ const Navbar = () => {
       <Menu
         id="demo-positioned-menu"
         aria-labelledby="demo-positioned-button"
-        // anchorEl={anchorEl}
         open={open}
         onClose={(e) => setOpen(false)}
         anchorOrigin={{
