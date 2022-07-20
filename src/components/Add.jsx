@@ -1,15 +1,27 @@
 import React, { useState } from "react";
+
 import {
   Tooltip,
   Fab,
   Modal,
   Box,
+  Stack,
   Typography,
   Avatar,
   styled,
   TextField,
+  ButtonGroup,
+  Button,
 } from "@mui/material";
-import { Add as AddIcon } from "@mui/icons-material";
+
+import {
+  Add as AddIcon,
+  EmojiEmotions,
+  Image,
+  VideoCameraBack,
+  PersonAdd,
+  DateRange,
+} from "@mui/icons-material";
 
 const Add = () => {
   const [open, setOpen] = useState(false);
@@ -47,7 +59,8 @@ const Add = () => {
         <Box
           width={400}
           height={250}
-          bgcolor="white"
+          bgcolor={"background.default"}
+          color={"text.primary"}
           padding={3}
           justifyContent="center"
           borderRadius={5}
@@ -73,6 +86,22 @@ const Add = () => {
             variant="standard"
             sx={{ width: "100%" }}
           />
+          <Stack direction="row" gap={1} mt={2} mb={3}>
+            <EmojiEmotions sx={{ color: "#F7B928" }} />
+            <Image color="success" />
+            <VideoCameraBack color="error" />
+            <PersonAdd color="primary" />
+          </Stack>
+          <ButtonGroup
+            fullWidth
+            variant="contained"
+            aria-label="outlined primary button group"
+          >
+            <Button>Post</Button>
+            <Button sx={{ width: "100px" }}>
+              <DateRange />
+            </Button>
+          </ButtonGroup>
         </Box>
       </Modal>
     </>
