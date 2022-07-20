@@ -8,7 +8,6 @@ import {
   CardHeader,
   CardMedia,
   Checkbox,
-  Collapse,
   IconButton,
   Typography,
   Menu,
