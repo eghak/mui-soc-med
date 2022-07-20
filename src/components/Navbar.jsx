@@ -52,7 +52,7 @@ const Navbar = () => {
     <AppBar position="sticky">
       <StyledToolbar>
         <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>
-          SOCIAL MEDIA
+          VIRTUAL SOCIAL
         </Typography>
 
         <EmojiPeopleTwoToneIcon sx={{ display: { xs: "block", sm: "none" } }} />
